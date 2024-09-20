@@ -1,0 +1,76 @@
+Mobile Price Classification Dataset Report
+==========================================
+
+1. Introduction:
+
+The mobile price classification dataset contains information about various mobile phone features and their corresponding price ranges. Our goal is to analyze this data and provide actionable insights for decision-making.
+
+2. Data Overview
+
+Dataset Source: Mobile Price Classification Dataset
+Features:
+Battery power
+Blue (Bluetooth support)
+Dual SIM
+4G support
+3G support
+Touch screen
+Wi-Fi
+Pixel resolution
+Screen dimensions
+Price range (target variable)
+
+3. Data Exploration
+
+Let’s start by exploring the dataset:
+
+First 5 Rows:
+print(train_df.head())
+
+Last 5 Rows:
+print(train_df.tail())
+
+Shape of the Dataset:
+num_rows, num_columns = tain_df.shape
+print(f"Number of rows: {num_rows}, Number of columns: {num_columns}")
+
+4. Data Cleaning
+
+We’ll handle any missing values and ensure data consistency.
+
+5. Column Name Changes and Data Updates
+
+We’ve renamed columns and mapped values as requested:
+*Bluetooth, Dual SIM, 4G, 3G, Touch Screen, Wi-Fi
+*Price range: Low Cost → 1, Medium Cost → 2, High Cost → 3
+
+6. Visualizations
+
+Let’s explore correlations and trends:
+a. Bar Plot: 3G vs. Sale Price
+We’ll compare the average sale price for devices with and without 3G support.
+# Create a bar plot
+# Example code (replace with actual data):
+# sns.barplot(x='3G', y='price_range', data=df)
+# Add labels and title
+
+b. Count Plot: Bluetooth Support vs. Price Range
+We’ll visualize the distribution of price ranges based on Bluetooth support.
+# Create a count plot
+# Example code (replace with actual data):
+# sns.countplot(x='Bluetooth', hue='price_range', data=df)
+# Add labels and title
+
+c. Scatter Plots: Pixel Resolution and Screen Dimensions vs. Price Range
+We’ll explore how pixel resolution and screen dimensions relate to price ranges.
+# Create scatter plots
+# Example code (replace with actual data):
+# plt.scatter(train_df['pixel_resolution'],train_df['price_range'], label='Pixel Resolution')
+# plt.scatter(train_df['screen_dimensions'],train_df['price_range'], label='Screen Dimensions')
+# Add labels and title
+
+7. Conclusion:
+
+Based on our analysis, we recommend optimizing features related to 3G support, Bluetooth, and screen specifications to maximize price range.
+
+Remember that this report serves as a starting point. Further analysis and domain-specific insights can enhance decision-making.
